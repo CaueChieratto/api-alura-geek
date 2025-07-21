@@ -1,1 +1,148 @@
-[]
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "starWars",
+      "name": "Stormtrooper Bust",
+      "price": 59.9,
+      "image": "/src/assets/products/p1.png",
+      "description": "Um busto incrível de Stormtrooper para sua coleção. Detalhes realistas para fãs de todas as idades."
+    },
+    {
+      "id": 2,
+      "category": "starWars",
+      "name": "Darth Vader Sculpture",
+      "price": 79,
+      "image": "/src/assets/products/p2.png",
+      "description": "Escultura premium do icônico Darth Vader. Presença imponente e acabamento impecável para qualquer estante."
+    },
+    {
+      "id": 3,
+      "category": "starWars",
+      "name": "Orange Display Figure",
+      "price": 45.5,
+      "image": "/src/assets/products/p3.png",
+      "description": "Figura vibrante com tons alaranjados que chama atenção. Um item diferenciado para sua vitrine Star Wars."
+    },
+    {
+      "id": 4,
+      "category": "starWars",
+      "name": "First Order Trooper",
+      "price": 62,
+      "image": "/src/assets/products/p4.png",
+      "description": "Leve o poder da Primeira Ordem para casa com essa figura detalhada e fiel aos filmes."
+    },
+    {
+      "id": 5,
+      "category": "starWars",
+      "name": "Baby Yoda Plush",
+      "price": 38.9,
+      "image": "/src/assets/products/p5.png",
+      "description": "Pelúcia fofíssima do Baby Yoda (Grogu). Perfeita para abraçar ou enfeitar o quarto geek."
+    },
+    {
+      "id": 6,
+      "category": "starWars",
+      "name": "Kylo Ren Statue",
+      "price": 85,
+      "image": "/src/assets/products/p6.png",
+      "description": "Estátua detalhada do Kylo Ren com pose marcante. Um presente perfeito para fãs de Star Wars."
+    },
+    {
+      "id": 7,
+      "category": "consoles",
+      "name": "Xbox Controller",
+      "price": 199.9,
+      "image": "/src/assets/products/p7.png",
+      "description": "Controle original Xbox com ergonomia avançada. Jogue com precisão e conforto."
+    },
+    {
+      "id": 8,
+      "category": "consoles",
+      "name": "PlayStation 5",
+      "price": 3899,
+      "image": "/src/assets/products/p8.png",
+      "description": "O console mais avançado da Sony. Gráficos de última geração e carregamento ultrarrápido."
+    },
+    {
+      "id": 9,
+      "category": "consoles",
+      "name": "NES Classic",
+      "price": 299.9,
+      "image": "/src/assets/products/p9.png",
+      "description": "Reviva os clássicos com o NES Classic. Diversão nostálgica em tamanho compacto."
+    },
+    {
+      "id": 10,
+      "category": "consoles",
+      "name": "Switch Joy-Cons",
+      "price": 349,
+      "image": "/src/assets/products/p10.png",
+      "description": "Par de Joy-Cons para Nintendo Switch. Versáteis e coloridos para todas as formas de jogar."
+    },
+    {
+      "id": 11,
+      "category": "consoles",
+      "name": "Xbox Series X",
+      "price": 4599,
+      "image": "/src/assets/products/p11.png",
+      "description": "A nova geração Xbox com potência impressionante. Jogos em 4K e desempenho de ponta."
+    },
+    {
+      "id": 12,
+      "category": "consoles",
+      "name": "Game Boy Color",
+      "price": 220,
+      "image": "/src/assets/products/p12.png",
+      "description": "Console portátil retrô com tela colorida. Clássico indispensável para colecionadores."
+    },
+    {
+      "id": 13,
+      "category": "diversos",
+      "name": "Atari Graphic Tee",
+      "price": 69.9,
+      "image": "/src/assets/products/p13.png",
+      "description": "Camiseta com estampa Atari estilosa. Confortável e perfeita para gamers nostálgicos."
+    },
+    {
+      "id": 14,
+      "category": "diversos",
+      "name": "SNES Controller Tee",
+      "price": 69.9,
+      "image": "/src/assets/products/p14.png",
+      "description": "Camiseta com estampa de controle SNES. Design retrô para os fãs de clássicos."
+    },
+    {
+      "id": 15,
+      "category": "diversos",
+      "name": "Sonic Figure",
+      "price": 89,
+      "image": "/src/assets/products/p15.png",
+      "description": "Figura do Sonic com pose dinâmica. Item essencial para quem ama o ouriço azul."
+    },
+    {
+      "id": 16,
+      "category": "diversos",
+      "name": "Retro Cassette",
+      "price": 29.9,
+      "image": "/src/assets/products/p16.png",
+      "description": "Fita cassete decorativa com visual retrô. Perfeita para quem curte nostalgia."
+    },
+    {
+      "id": 17,
+      "category": "diversos",
+      "name": "VR Headset Display",
+      "price": 499,
+      "image": "/src/assets/products/p17.png",
+      "description": "Suporte decorativo para headset VR. Organize com estilo seu setup gamer."
+    },
+    {
+      "id": 18,
+      "category": "diversos",
+      "name": "Pikachu Plush",
+      "price": 79,
+      "image": "/src/assets/products/p18.png",
+      "description": "Pelúcia fofinha do Pikachu. Um presente irresistível para fãs de Pokémon."
+    }
+  ]
+}
