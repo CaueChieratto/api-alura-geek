@@ -13,34 +13,45 @@ function writeDB(data) {
 }
 
 export default async function handler(req, res) {
-  const { method } = req;
-  const products = readDB();
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  if (method === "GET") {
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
+  const db = readDB();
+  const products = db.products;
+
+  if (req.method === "GET") {
     return res.status(200).json(products);
   }
 
-  if (method === "POST") {
+  if (req.method === "POST") {
     const newProduct = { id: Date.now(), ...req.body };
-    products.push(newProduct);
-    writeDB(products);
+    db.products.push(newProduct);
+    writeDB(db);
     return res.status(201).json(newProduct);
   }
 
-  if (method === "PUT") {
+  if (req.method === "PUT") {
     const { id, ...rest } = req.body;
-    const index = products.findIndex((p) => p.id === id);
+    const index = db.products.findIndex((p) => p.id === id);
     if (index === -1) return res.status(404).json({ error: "Not found" });
 
-    products[index] = { id, ...rest };
-    writeDB(products);
-    return res.status(200).json(products[index]);
+    db.products[index] = { id, ...rest };
+    writeDB(db);
+    return res.status(200).json(db.products[index]);
   }
 
-  if (method === "DELETE") {
+  if (req.method === "DELETE") {
     const { id } = req.body;
-    const filtered = products.filter((p) => p.id !== id);
-    writeDB(filtered);
+    db.products = db.products.filter((p) => p.id !== id);
+    writeDB(db);
     return res.status(200).json({ message: "Deleted" });
   }
 
